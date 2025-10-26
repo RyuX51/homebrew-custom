@@ -1,4 +1,4 @@
-class Rsync < Formula
+class RsyncCustom < Formula
   desc "Rsync with --no-i-r-skip-unchanged for accurate progress on resumed transfers"
   homepage "https://github.com/RyuX51/rsync"
   url "https://github.com/RyuX51/rsync.git", branch: "pr-no-i-r-skip-unchanged"
