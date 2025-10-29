@@ -9,6 +9,9 @@ class RsyncCustom < Formula
   depends_on "automake" => :build
 
   def install
+    # Fetch tags for proper version detection (fixes "3.4.2dev" fallback)
+    system "git", "fetch", "--tags"
+    
     # Generate configure script
     system "./prepare-source", "build"
     
